@@ -1,79 +1,59 @@
 import Logo from "../../src/assets/images/logo.png";
 const Nav = () => {
-    const links = [
-        {
-            id:1,
-            title:"Home",
-            link:"/#",
-        },
-        {
-            id:2,
-            title:"About",
-            link:"/about",
-        },
-        {
-            id:3,
-            title:"Menu",
-            link:"/menu",
-        },
-        {
-            "id": 4,
-            "title": "Services",
-            "link": "/services",
-        }
-    ];
-    
-    function toggleMenu() {
-        const pages = document.querySelector('.pages');
-        pages.style.display = pages.style.display === 'flex' ? 'none' : 'flex';
-    }
+  const links = [
+    {
+      id: 1,
+      title: "Home",
+      link: "/#",
+    },
+    {
+      id: 2,
+      title: "About",
+      link: "/about",
+    },
+    {
+      id: 3,
+      title: "Menu",
+      link: "/menu",
+    },
+    {
+      id: 4,
+      title: "Services",
+      link: "/services",
+    },
+  ];
 
-    return (
-        <>
-        {/* <nav className="nav">
+  function toggleMenu() {
+    const pages = document.querySelector(".pages");
+    pages.style.display = pages.style.display === "flex" ? "none" : "flex";
+  }
 
-           <div className="navbar">
-                <div data-aos="fade-right" className="logo">
-                    <img src={Logo} alt="Logo"/>
-                </div>
-                <div className="pages">
-                    <ul>
-                        {links.map((link) => (
-                            <li data-aos="fade-left" key={link.id}>
-                                <a href={link.link}>{link.title}</a>
-                            </li>
-                        ))}
-                    <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-200">Login</button>
-                    </ul>
-                </div>
-           </div>
-           </nav> */}
-
-<nav className="nav">
-    <div className="navbar">
-        <div data-aos="fade-right" className="logo">
+  return (
+    <>
+      <nav className="nav">
+        <div className="navbar">
+          <div data-aos="fade-right" className="logo">
             <img src={Logo} alt="Logo" />
-        </div>
-        <div className="menu-toggle" onClick={toggleMenu}>
+          </div>
+          <div className="menu-toggle" onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <div className="pages">
+          </div>
+          <div className="pages">
             <ul>
-                {links.map((link) => (
-                    <li data-aos="fade-left" key={link.id}>
-                        <a href={link.link}>{link.title}</a>
-                    </li>
-                ))}
-                <button className="login-btn">Login</button>
+              {links.map((link) => (
+                <li data-aos="fade-left" key={link.id}>
+                  <a href={link.link}>{link.title}</a>
+                </li>
+              ))}
+              <button className="login-btn">Login</button>
             </ul>
+          </div>
         </div>
-    </div>
-</nav>
-  </>
-    );
-
-}
+      </nav>
+    </>
+  );
+};
 
 export default Nav;
