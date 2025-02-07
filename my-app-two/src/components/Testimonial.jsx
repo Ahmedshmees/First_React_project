@@ -50,7 +50,7 @@ const Testimonial = () => {
             <div className="Slider" {...settings}>
                   {TestimonialData.map (element => {
                     return (
-                        <div data-aos="fade-left" data-aos-delay={element.aosDelay} key={element.id}>
+                        <div data-aos="fade-up" data-aos-delay={element.aosDelay} key={element.id}>
                             <img src={element.img} alt={element.name} />
                             <p>{element.testimonial}</p>
                             <h3>{element.name}</h3>

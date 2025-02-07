@@ -145,7 +145,7 @@ nav {
 
 @media (max-width: 768px) {
     .main .text {
-        padding-top: 100px;
+        padding-top: 30px;
     }
     .main .text h2 {
         font-size: 36px;
@@ -166,7 +166,7 @@ nav {
         padding: 10px;
     }
     .main .text {
-        padding-top: 100px;
+        padding-top: 30px;
     }
     .main .text h2 {
         font-size: 28px;
@@ -191,6 +191,7 @@ nav {
     position: relative;
     min-height: 700px;
     overflow: hidden;
+    margin-top: 80px;
 }
 .main::before {
     content: "";
@@ -573,6 +574,7 @@ nav {
     flex-wrap: wrap;
     gap: 50px;
     justify-content: space-around;
+    padding: 0 100px;
 }
 .footer .col .one .head img {
     width: 60px;
@@ -636,6 +638,12 @@ nav {
     }
     .footer .col .one, .footer .col .two {
         width: 100%;
+    }
+    .footer .col .one > p {
+        margin: 5px auto;
+    }
+    .footer .col .one .head {
+        justify-content: center;
     }
 }
 
