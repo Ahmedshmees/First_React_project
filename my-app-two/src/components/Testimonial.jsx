@@ -23,6 +23,7 @@ const Testimonial = () => {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
           img: "https://picsum.photos/101/101",
           aosDelay:100,
+          dataAos:"fade-left",
         },
         {
           id: 2,
@@ -31,6 +32,7 @@ const Testimonial = () => {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
           img: "https://picsum.photos/102/102",
           aosDelay:200,
+          dataAos:"fade-right",
         },
         {
           id: 3 , 
@@ -39,6 +41,7 @@ const Testimonial = () => {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
           img: "https://picsum.photos/103/103",
           aosDelay:300,
+          dataAos:"fade-left",
         },
       ];
     return (
@@ -50,7 +53,7 @@ const Testimonial = () => {
             <div className="Slider" {...settings}>
                   {TestimonialData.map (element => {
                     return (
-                        <div data-aos="fade-up" data-aos-delay={element.aosDelay} key={element.id}>
+                        <div data-aos={element.dataAos} data-aos-delay={element.aosDelay} key={element.id}>
                             <img src={element.img} alt={element.name} />
                             <p>{element.testimonial}</p>
                             <h3>{element.name}</h3>
