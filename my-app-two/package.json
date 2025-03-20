@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://Ahmedshmees.github.io/First_React_project",
+  "homepage": "https://ahmedshmees.github.io/First_React_project",
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "aos": "^2.3.4",
